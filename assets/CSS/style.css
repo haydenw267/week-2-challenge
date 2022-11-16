@@ -1,0 +1,50 @@
+/*This is for the body which will affect everything on the entire page*/
+body{
+    display: flex;
+    background-color: darkgray;
+    flex-direction: column;
+    margin: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* This cluster is for the header, any text on it, and the nav bar*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(63, 63, 63);
+    color: chartreuse;
+}
+h1{
+    color: red;
+    background-color: rgb(63, 63, 63);
+    padding: 5px;
+}
+nav li{
+    display: flex;
+    display: inline;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 200%;
+}
+nav li:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+/*This cluster will be for the three main sections of the page*/
+article section{
+    display: flex; 
+    justify-content: center;
+    background-color: rgb(63, 63, 63);
+    padding: 1%; 
+}
+    
+h2{
+
+}
+section p{
+    margin: auto;
+}
