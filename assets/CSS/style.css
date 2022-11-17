@@ -1,34 +1,43 @@
-/*This is for the body which will affect everything on the entire page*/
-body{
-    display: flex;
-    background-color: darkgray;
-    flex-direction: column;
-    margin: 0%;
+/*This will affect everything on the entire page*/
+*{
+    margin: 0px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #71a2b6;
+    border: 0%;
 }
 
 /* This cluster is for the header, any text on it, and the nav bar*/
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color:rgb(63, 63, 63);
-    color: chartreuse;
+    padding: 60px;
+    height: 200px;
+    text-align: center;
+    background:#282828;
+    color: #282828;
+    font-size: 30px;
 }
-h1{
-    color: red;
-    background-color: rgb(63, 63, 63);
-    padding: 5px;
-}
-nav li{
-    display: flex;
-    display: inline;
+header h1{
+    border: 5px;
     padding: 10px;
-    justify-content: space-between;
-    font-size: 200%;
+    border-style: double;
+    border-color: #F5FFC6;
+    background-color: #71a2b6;
 }
+
+nav li{
+    position: relative;
+    top: 60px;
+    display: inline;
+    border: 5px;
+    padding: 10px;
+    font-size: 50px;
+    border-style: double;
+    border-color: #F5FFC6;
+    background-color: #71a2b6;
+}
+
 nav li:hover{
     cursor: pointer;
     color: aqua;
@@ -36,15 +45,39 @@ nav li:hover{
 
 /*This cluster will be for the three main sections of the page*/
 article section{
-    display: flex; 
-    justify-content: center;
-    background-color: rgb(63, 63, 63);
+    text-align: center;
     padding: 1%; 
 }
-    
 h2{
-
+    font-size: 75px;
+    background-color: aquamarine;
+    border: 10px solid;
+    border-style: double;
+    border-color: #282828;
 }
-section p{
-    margin: auto;
+p{
+    font-size: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+img {
+    border: 10px solid;
+    border-color: #282828;
+}
+.imgTitle{
+    border: solid;
+    color: aquamarine;
+    border-color: #282828;
+    background-color: #282828;
+}
+/*This changes the nav bar to fit smaller screens*/
+@media screen and (max-width: 1019px) {
+    header{
+        height: fit-content;
+        border-bottom: 10px;
+    }
+    nav li{
+    display: block;    
+    }
+    
 }
